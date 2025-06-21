@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AirDrop –空投你的貨 無人機包養服務</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .hero {
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: #00ffe7;
+      text-align: center;
+      padding: 3rem 1rem;
+      animation: fadeIn 1.5s ease-in;
+    }
+
+    .drone-features, .drone-subscription {
+      animation: slideUp 1s ease-out;
+      padding: 2rem;
+    }
+
+    .feature-image {
+      width: 100%;
+      max-width: 600px;
+      margin-top: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .feature-image:hover {
+      transform: scale(1.05);
+    }
+
+    .subscribe-btn {
+      margin-top: 1rem;
+      padding: 0.8rem 1.5rem;
+      background: #00ffc3;
+      color: #0a0f1a;
+      font-size: 1.1rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideUp {
+      from { transform: translateY(50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-logo">🚁 AirDrop –空投你的貨</div>
+    <ul class="nav-links">
+      <li><a href="index.html">返回首頁</a></li>
+      <li><a href="#features">功能介紹</a></li>
+      <li><a href="#subscribe">方案申請</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero">
+    <h1>無人機包養服務</h1>
+    <p>您的專屬空中夥伴，隨傳隨到 ✨</p>
+  </header>
+
+  <section id="features" class="drone-features">
+    <h2>📦 功能特色</h2>
+    <ul>
+      <li>即時外送 — 餐點 15 分鐘內送達</li>
+      <li>語音操控 — 支援手機語音指令</li>
+      <li>視訊巡航 — 無人機鏡頭實況直播</li>
+      <li>遠端風景直播 — 可切換觀光巡航模式</li>
+      <li>智慧感測 — 自動避障、偵測天氣</li>
+    </ul>
+    <img src="drone_live_demo.jpg" alt="無人機示意圖" class="feature-image" />
+  </section>
+
+  <section id="subscribe" class="drone-subscription">
+    <h2>💎 包月方案</h2>
+    <p>月費 NT$500 元，即享以下尊榮服務：</p>
+    <ul>
+      <li>每日不限次數專屬無人機服務</li>
+      <li>優先配送通道</li>
+      <li>AI 語音助理支援</li>
+      <li>專屬線上客服</li>
+    </ul>
+    <button class="subscribe-btn">立即申請</button>
+  </section>
+
+  <footer class="footer">
+    <p>AirDrop –空投你的貨 無人機外送平台 Ⓒ 2025 嘎嘎工作室</p>
+  </footer>
+</body>
+</html>

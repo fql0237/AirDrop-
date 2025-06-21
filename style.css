@@ -1,0 +1,211 @@
+/* 全域設定 */
+body {
+  margin: 0;
+  font-family: "Noto Sans TC", sans-serif;
+  background-color: #0a0f1a;
+  color: #e0f7fa;
+}
+
+/* 導覽列 */
+.navbar {
+  background-color: #0e1c2f;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+}
+
+.nav-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #00ffe7;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: #e0f7fa;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: #00ffc3;
+}
+
+/* 輪播廣告 */
+.carousel {
+  background-color: #081018;
+  padding: 1rem 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-container {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 400%;
+}
+
+.carousel-slide {
+  width: 100vw;
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 1rem 0;
+  background-color: #132030;
+  color: #00ffe7;
+}
+
+.carousel-dots {
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.carousel-dots .dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #777;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.carousel-dots .dot.active {
+  background-color: #00ffe7;
+}
+
+/* 搜尋欄 */
+.search-bar {
+  background: #101a28;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.search-bar input {
+  width: 60%;
+  padding: 0.6rem;
+  font-size: 1rem;
+  border: 1px solid #333;
+  border-radius: 5px;
+  margin-right: 0.5rem;
+  background-color: #1b2d44;
+  color: #00ffe7;
+}
+
+.search-bar button {
+  padding: 0.6rem 1.2rem;
+  background-color: #00ffc3;
+  color: #0a0f1a;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* ETA 倒數 */
+.eta-box {
+  text-align: center;
+  background: #132030;
+  padding: 1rem;
+  color: #00ffc3;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+/* 推薦店家 */
+.featured-stores {
+  padding: 2rem;
+  background: #0e1c2f;
+}
+
+.featured-stores h2 {
+  margin-bottom: 1rem;
+  color: #00ffe7;
+}
+
+.store-cards {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.store-card {
+  background-color: #1b2d44;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,255,255,0.1);
+  width: calc(33% - 1rem);
+  color: #e0f7fa;
+}
+
+.store-card button {
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #00ffc3;
+  color: #0a0f1a;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* 說明與登入區 */
+.about-section,
+.login-section {
+  padding: 2rem;
+  background-color: #101a28;
+}
+
+.about-section h2,
+.login-section h2 {
+  color: #00ffe7;
+}
+
+input[type=\"text\"], input[type=\"password\"] {
+  display: block;
+  margin: 0.5rem 0;
+  padding: 0.6rem;
+  width: 100%;
+  background-color: #1b2d44;
+  color: #00ffe7;
+  border: 1px solid #333;
+  border-radius: 5px;
+}
+
+/* 按鈕統一 */
+button:hover {
+  background-color: #00bfa6;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #081018;
+  color: #555;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+}
+
+/* Toast */
+.toast {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  background: #00ffc3;
+  color: #0a0f1a;
+  padding: 1rem 1.2rem;
+  border-radius: 5px;
+  display: none;
+  font-weight: bold;
+  box-shadow: 0 0 10px rgba(0,255,255,0.3);
+}

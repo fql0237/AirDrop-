@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AirDrop –空投你的貨 下單頁面</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .order-container {
+      max-width: 800px;
+      margin: 2rem auto;
+      background: #102030;
+      color: #00ffc3;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+      animation: fadeIn 1s ease-in;
+    }
+
+    .order-container h2 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .order-form label {
+      display: block;
+      margin-top: 1rem;
+      font-weight: bold;
+    }
+
+    .order-form input, .order-form select, .order-form textarea {
+      width: 100%;
+      padding: 0.6rem;
+      margin-top: 0.3rem;
+      background: #1b2d44;
+      color: #00ffe7;
+      border: 1px solid #333;
+      border-radius: 5px;
+    }
+
+    .order-form button {
+      margin-top: 1.5rem;
+      padding: 0.8rem 1.5rem;
+      background: #00ffc3;
+      color: #0a0f1a;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    .order-form button:hover {
+      background: #00c9a0;
+    }
+
+    .order-toast {
+      display: none;
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background: #00ffc3;
+      color: #0a0f1a;
+      padding: 1rem 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,255,255,0.3);
+      z-index: 999;
+      animation: fadeInOut 3s ease forwards;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes fadeInOut {
+      0% { opacity: 0; transform: translateY(-10px); }
+      10% { opacity: 1; transform: translateY(0); }
+      90% { opacity: 1; transform: translateY(0); }
+      100% { opacity: 0; transform: translateY(-10px); }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-logo">🚁 AirDrop –空投你的貨</div>
+    <ul class="nav-links">
+      <li><a href="index.html">返回首頁</a></li>
+      <li><a href="drone.html">無人機包養</a></li>
+      <li><a href="order.html">立即下單</a></li>
+    </ul>
+  </nav>
+
+  <div class="order-container">
+    <h2>🛍️ 立即下單</h2>
+    <form class="order-form" onsubmit="submitOrder(event)">
+      <label for="store">選擇商家</label>
+      <select id="store">
+        <option>滿福壽司</option>
+        <option>開心炸雞</option>
+        <option>林記滷味</option>
+        <option>單身炸醬麵</option>
+      </select>
+
+      <label for="items">訂購內容</label>
+      <textarea id="items" rows="3" placeholder="請輸入欲訂購的品項與數量，例如：炸雞x1、珍奶x2"></textarea>
+
+      <label for="location">送達地址</label>
+      <input type="text" id="location" placeholder="請輸入詳細地址">
+
+      <label for="time">希望送達時間</label>
+      <input type="time" id="time">
+
+      <button type="submit">確認送出</button>
+    </form>
+  </div>
+
+  <div class="order-toast" id="toast">✅ 訂單已送出！無人機正在準備起飛…</div>
+
+  <footer class="footer">
+    <p>AirDrop –空投你的貨 無人機外送平台 Ⓒ 2025 嘎嘎工作室</p>
+  </footer>
+
+  <script>
+    function submitOrder(event) {
+      event.preventDefault();
+      const toast = document.getElementById('toast');
+      toast.style.display = 'block';
+      setTimeout(() => {
+        toast.style.display = 'none';
+      }, 3000);
+    }
+  </script>
+</body>
+</html>

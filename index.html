@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AirDrop –空投你的貨 無人機外送平台</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="main.js"></script>
+</head>
+<body>
+  <!-- 主導覽列 -->
+  <nav class="navbar">
+    <div class="nav-logo">🚁 AirDrop –空投你的貨</div>
+    <ul class="nav-links">
+      <li><a href="#featured">推薦商家</a></li>
+      <li><a href="#about">平台說明</a></li>
+      <li><a href="#login">登入註冊</a></li>
+      <li><a href="drone.html">無人機包養</a></li>
+      <li><a href="order.html">立即下單</a></li>
+    </ul>
+  </nav>
+
+  <!-- 輪播廣告區塊 -->
+  <section class="carousel">
+    <div class="carousel-container">
+      <div class="carousel-slide active">🍱 新開幕！日式便當買一送一</div>
+      <div class="carousel-slide">🍔 限時優惠！炸雞全品項 7 折</div>
+      <div class="carousel-slide">🍜 免費外送券已發送至帳號</div>
+      <div class="carousel-slide">🛸 無人機包養開放申請</div>
+    </div>
+    <div class="carousel-dots">
+      <span class="dot active"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+  </section>
+
+  <!-- 搜尋欄 -->
+  <section class="search-bar">
+    <input type="text" placeholder="搜尋炸雞、壽司、珍奶...">
+    <button>搜尋</button>
+  </section>
+
+  <!-- ETA 倒數 -->
+  <section class="eta-box">
+    <p>預估送達時間：<span id="eta">--</span></p>
+  </section>
+
+  <!-- 推薦店家 -->
+  <section id="featured" class="featured-stores">
+    <h2>🔥 推薦店家</h2>
+
+    <div class="store-cards">
+
+      <div class="store-card">
+        <h3>滿福壽司</h3>
+        <p>⭐ 4.7｜1.2 公里｜平均 $120</p>
+        <button>查看</button>
+      </div>
+
+      <div class="store-card">
+        <h3>開心炸雞</h3>
+        <p>⭐ 4.4｜0.8 公里｜平均 $150</p>
+        <button>查看</button>
+      </div>
+
+      <div class="store-card">
+        <h3>林記滷味</h3>
+        <p>⭐ 4.6｜1.5 公里｜平均 $100</p>
+        <button>查看</button>
+      </div>
+
+      <div class="store-card">
+        <h3>單身炸醬麵</h3>
+        <p>⭐ 2.0｜1.3 公里｜平均 $111</p>
+        <button>查看</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 關於平台 -->
+  <section id="about" class="about-section">
+    <h2>🔍 關於 AirDrop –空投你的貨</h2>
+    <p>SkyMeal 是以無人機為主力的未來外送平台，提供快速、低碳、高效的空中配送體驗。使用者可透過平台選擇喜愛餐點，由無人機即時配送到府。</p>
+  </section>
+
+  <!-- 登入註冊模擬 -->
+  <section id="login" class="login-section">
+    <h2>🔐 登入 / 註冊</h2>
+    <!-- <p>[ 模擬登入功能，無需實際帳密驗證 ]</p> -->
+    <input type="text" placeholder="輸入電子信箱">
+    <input type="password" placeholder="輸入密碼">
+    <button>登入</button>
+    <button>註冊</button>
+  </section>
+
+  <footer class="footer">
+    <p>AirDrop –空投你的貨 無人機外送平台 Ⓒ 2025 嘎嘎工作室</p>
+  </footer>
+
+  <div class="toast" id="toast">📣 熱門店家「阿興便當」剛上架！</div>
+</body>
+</html>
